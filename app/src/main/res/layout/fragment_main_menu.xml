@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <FrameLayout
+            android:id="@+id/relFrame1"
+            android:layout_width="match_parent"
+            android:layout_height="394dp"
+            android:background="#FFDE59">
+
+            <ImageButton
+                android:id="@+id/budgetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/budget"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="40dp"
+                android:clickable="false"
+                android:text="@string/budget_text"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/relFrame2"
+            android:layout_width="match_parent"
+            android:layout_height="394dp"
+            android:layout_below="@id/relFrame1"
+            android:background="#00bf62">
+
+            <ImageButton
+                android:id="@+id/tipsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tips"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="40dp"
+                android:clickable="false"
+                android:text="@string/tip_text"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

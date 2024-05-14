@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/tvTipTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginEnd="10dp" /> <!-- Adjust margin to accommodate buttons -->
+
+    <!-- Expand/Collapse Buttons -->
+    <RelativeLayout
+        android:id="@+id/expandCollapseLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|end"
+        android:layout_alignBottom="@id/tvTipTitle"
+        android:layout_alignEnd="@id/tvTipTitle"
+        android:layout_marginEnd="8dp"
+ >
+
+        <!-- Expand Button -->
+        <ImageView
+            android:id="@+id/expandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/open" />
+
+        <!-- Collapse Button -->
+        <ImageView
+            android:id="@+id/collapseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close"
+            android:visibility="gone"
+            android:layout_toEndOf="@id/expandButton"
+            android:layout_marginStart="8dp" />
+    </RelativeLayout>
+
+    <!-- First Sentence TextView -->
+    <TextView
+        android:id="@+id/tvFirstSentence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvTipTitle"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        />
+
+    <!-- Expandable Layout (Content) -->
+    <LinearLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_below="@id/tvFirstSentence"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/tvTipContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="TextView"
+            android:layout_marginTop="0dp" />
+
+    </LinearLayout>
+</RelativeLayout>

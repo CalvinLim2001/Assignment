@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+    <TextView
+        android:id="@+id/tvRegisterUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/usernameRegister_text"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tfRegisterUser"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRegisterUser"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvRegisterEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tfRegisterUser"
+        android:layout_marginStart="10dp"
+        android:text="@string/emailRegister_text"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tfRegisterEmail"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRegisterEmail"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="text|textEmailAddress|textMultiLine"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvRegisterPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tfRegisterEmail"
+        android:layout_marginStart="10dp"
+        android:text="@string/passwordRegister_text"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tfRegisterPassword"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRegisterPassword"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="text|textPassword|textMultiLine"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tfRegisterPassword"
+        android:layout_marginStart="10dp"
+        android:text="@string/confirmPassword_text"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tfConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvConfirmPassword"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="text|textPassword|textMultiLine"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvRegisterLoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tfConfirmPassword"
+        android:layout_marginStart="10dp"
+        android:text="@string/loanAmountRegister_text"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tfRegisterLoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRegisterLoan"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="number|numberDecimal"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tfRegisterLoan"
+        android:layout_marginStart="10dp"
+        android:text="@string/interestRate_text"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tfInterest"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvInterest"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvRegisterBudgetWarn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tfRegisterLoan"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/tfInterest"
+        android:text="@string/budgetWarning_text"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tfRegisterBudgetWarn"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRegisterBudgetWarn"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/tfInterest"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="number|numberDecimal"
+        android:maxLength="3"
+        android:singleLine="true"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvMandatory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tfRegisterBudgetWarn"
+        android:layout_marginStart="10dp"
+        android:text="@string/mandatoryField_text"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMandatory"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:text="Register"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
